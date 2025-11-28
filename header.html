@@ -1,0 +1,58 @@
+<!-- Header & Navigation -->
+<header id="header" class="bg-brand-cream/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center space-x-2">
+            <img src="Holmes_Impact_Strategies.png" alt="Holmes Impact Strategies Logo" style="height:100px" >
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="holmesimpact.html#home" class="text-brand-navy hover:text-blue-600 transition duration-300 font-medium">Home</a>
+            <a href="holmesimpact.html#about" class="text-brand-navy hover:text-blue-600 transition duration-300 font-medium">About</a>
+            <div class="relative group">
+                <a href="holmesimpact.html#services" class="text-brand-navy hover:text-blue-600 transition duration-300 font-medium flex items-center">
+                    Services
+                    <svg class="ml-1 w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+                <div class="hidden group-hover:block absolute top-full left-0 bg-white shadow-xl rounded-lg py-3 w-56 border border-gray-100 z-10 transition-all duration-200 ease-out opacity-0 group-hover:opacity-100 transform -translate-y-1 group-hover:translate-y-0">
+                    <a href="residential-partner-program.html" class="block px-4 py-2 text-gray-700 hover:bg-brand-cream hover:text-brand-navy active:bg-brand-navy active:text-white transition duration-150 font-medium">Residential Partner Program</a>
+                </div>
+            </div>
+            <a href="holmesimpact.html#contact" class="text-brand-navy hover:text-blue-600 transition duration-300 font-medium">Contact</a>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="hidden md:block bg-brand-navy text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition duration-300 shadow-md">
+            Book a Consultation
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-brand-navy focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+        <a href="holmesimpact.html#home" class="block py-2 text-brand-navy font-medium">Home</a>
+        <a href="holmesimpact.html#about" class="block py-2 text-brand-navy font-medium">About</a>
+        <div class="py-2">
+            <button id="mobile-services-btn" class="flex items-center justify-between w-full text-brand-navy font-medium">
+                <span>Services</span>
+                <svg class="w-4 h-4 transition-transform duration-200" id="mobile-services-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div id="mobile-services-menu" class="hidden mt-2 ml-4 space-y-1">
+                <a href="residential-partner-program.html" class="block py-1 text-gray-600 hover:text-brand-navy">Residential Partner Program</a>
+            </div>
+        </div>
+        <a href="holmesimpact.html#contact" class="block py-2 text-brand-navy font-medium">Contact</a>
+        <a href="holmesimpact.html#contact" class="block mt-4 bg-brand-navy text-white text-center px-5 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition duration-300 shadow-md">
+            Book a Consultation
+        </a>
+    </div>
+</header>
