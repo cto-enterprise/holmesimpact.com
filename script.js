@@ -61,7 +61,8 @@ fetch('header.html')
                 });
             });
         });
-    });
+    })
+    .catch(error => console.error('Error loading header:', error));
 
 fetch('footer.html')
     .then(response => response.text())
@@ -69,7 +70,8 @@ fetch('footer.html')
         document.getElementById('footer').innerHTML = data;
         // Set current year in footer after it's loaded
         document.getElementById('year').textContent = new Date().getFullYear();
-    });
+    })
+    .catch(error => console.error('Error loading footer:', error));
 
 // Scroll reveal animations
 const revealElements = document.querySelectorAll('.reveal');
